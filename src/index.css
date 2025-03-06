@@ -1,7 +1,56 @@
+@import url('./assets/styles/fonts.css');
+
 @import "tailwindcss";
+
+@theme {
+    --breakpoint-*: initial;
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1200px;
+
+    --spacing-*: initial;
+    --spacing-0: 0px;
+    --spacing-1: 1px;
+    --spacing-2: 2px;
+    --spacing-3: 3px;
+    --spacing-4: 4px;
+    --spacing-5: 5px;
+    --spacing-6: 6px;
+    --spacing-8: 8px;
+    --spacing-10: 10px;
+    --spacing-12: 12px;
+    --spacing-14: 14px;
+    --spacing-16: 16px;
+    --spacing-18: 18px;
+    --spacing-20: 20px;
+    --spacing-22: 22px;
+    --spacing-24: 24px;
+    --spacing-26: 26px;
+    --spacing-28: 28px;
+    --spacing-30: 30px;
+    --spacing-32: 32px;
+    --spacing-38: 38px;
+    --spacing-40: 40px;
+    --spacing-50: 50px;
+    --spacing-64: 64px;
+    --spacing-128: 128px;
+    --spacing-256: 256px;
+    --spacing-512: 512px;
+
+    --color-accent: theme('colors.orange.400');
+    --color-text: theme('colors.gray.200');
+
+    --font-playwrite: 'Playwrite', serif;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
 
 html {
     body {
         @apply bg-gray-600;
+        @apply font-[Lato];
     }
 }
